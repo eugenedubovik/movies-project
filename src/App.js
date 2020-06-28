@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import {Header} from './components'
+import {Header, Footer, MainContainer} from './components'
 import './App.css';
 
 function App() {
+  
   return (
     <div className="App">
-      <Header>123123</Header>
+      <Header/>
+      <MainContainer/>
+      <Footer/>
     </div>
   );
 }

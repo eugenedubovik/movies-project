@@ -1,0 +1,10 @@
+.mainContainer {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #FFFDFF;
+    flex-wrap: wrap;
+}
