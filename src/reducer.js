@@ -18,6 +18,7 @@ export function moviesReducer(state = initialState, action) {
     }
 
     case GET_MOVIES_SUCCESS: {
+      
       return {
         ...state,
         loading: false,
