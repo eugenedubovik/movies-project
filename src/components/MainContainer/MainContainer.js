@@ -9,7 +9,7 @@ export  const MainContainer = ()=>{
       } = useSelector((state) => state);
 
 return <div className={styles.mainContainer}>
-    {data.map((item)=> {
+    {/* {data.map((item)=> {
         return (
             <Banner 
             src={item.backgroundImage}
@@ -19,7 +19,7 @@ return <div className={styles.mainContainer}>
              />
              
         )
-    })}
+    })} */}
 
 
     <Banner backgroundImage="url(https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg)"/>
