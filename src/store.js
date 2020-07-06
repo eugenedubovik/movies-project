@@ -1,6 +1,11 @@
-import { createStore, applyMiddleware } from 'redux'
-// import { composeWithDevTools } from 'redux-devtools-extension';
-import { moviesReducer } from './reducer'
- 
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { rootReducer } from './rootReducer';
+import { moviesApiMiddleware} from './middleware';
 
-export const store = createStore(moviesReducer)
+export const store = createStore(rootReducer,
+    composeWithDevTools(
+      applyMiddleware(
+        moviesApiMiddleware,
+      ),
+    ));

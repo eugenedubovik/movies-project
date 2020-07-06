@@ -26,7 +26,7 @@ export const Form = ({
 
  const onClick = (event)=>{
     dispatch({ type: GET_MOVIES_REQUEST, data: inputValue });
-   event.preventDefault();
+    event.preventDefault();
     console.log(data)
 
  }
